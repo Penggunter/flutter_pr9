@@ -19,8 +19,6 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
   final user = UserData.of(context).username;
-  print(GetIt.instance.isRegistered(instance: "user_service"));
-
   final userService = GetIt.instance<UserService>(instanceName: "user_service");
 
   return Scaffold(
